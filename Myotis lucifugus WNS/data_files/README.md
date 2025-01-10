@@ -1,1 +1,3 @@
-
+- VCFs - wont' fit; need to upload in repository with raw data
+  - filtered vcf
+  - filtered vcf - 5 Kbp thinned
