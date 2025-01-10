@@ -1,0 +1,60 @@
+Sample	Population	Site	Site Type	Year	Coverage	Tissue	Genomic Sex
+5MPRENY_S21	NYPRE	"(5) Albany County, NY"	Hibernacula	2007	Low	Wing	M
+7FPRENY_S14	NYPRE	"(5) Albany County, NY"	Hibernacula	2007	Low	Wing	F
+9MPRENY_S20	NYPRE	"(5) Albany County, NY"	Hibernacula	2007	Low	Wing	M
+10FPRENY_S18	NYPRE	"(5) Albany County, NY"	Hibernacula	2007	Low	Wing	F
+12MPRENY_S19	NYPRE	"(5) Albany County, NY"	Hibernacula	2007	Low	Wing	M
+13FPRENY_S22	NYPRE	"(5) Albany County, NY"	Hibernacula	2007	Low	Wing	F
+14FPRENY_S3	NYPRE	"(5) Albany County, NY"	Hibernacula	2007	High	Wing	F
+15FPRENY_S23	NYPRE	"(5) Albany County, NY"	Hibernacula	2007	Low	Wing	M
+16FPRENY_S25	NYPRE	"(5) Albany County, NY"	Hibernacula	2007	Low	Wing	F
+18FPRENY_S24	NYPRE	"(5) Albany County, NY"	Hibernacula	2007	Low	Wing	F
+19FPRENY_S16	NYPRE	"(5) Albany County, NY"	Hibernacula	2007	Low	Wing	F
+20MPRENY_S4	NYPRE	"(5) Albany County, NY"	Hibernacula	2007	High	Wing	M
+21MPRENY_S17	NYPRE	"(5) Albany County, NY"	Hibernacula	2007	Low	Wing	M
+23MPRENY_S15	NYPRE	"(5) Albany County, NY"	Hibernacula	2007	Low	Wing	M
+NYDEC31050_S48	NYPOST	"(15) Essex County, NY"	Maternity Roost	2016	Low	Wing	F
+NYDEC31052_S49	NYPOST	"(15) Essex County, NY"	Maternity Roost	2016	Low	Wing	F
+NYDEC31057_S51	NYPOST	"(15) Essex County, NY"	Maternity Roost	2016	Low	Wing	F
+NYDEC31058_S50	NYPOST	"(15) Essex County, NY"	Maternity Roost	2016	Low	Wing	M
+NYDEC31068_S8	NYPOST	"(15) Essex County, NY"	Maternity Roost	2016	High	Wing	F
+NYDEC33007_S47	NYPOST	"(14) Albany County, NY"	Maternity Roost	2016	Low	Wing	F
+NYDEC33023_S46	NYPOST	"(14) Albany County, NY"	Maternity Roost	2016	Low	Wing	M
+NYDEC33024_S7	NYPOST	"(14) Albany County, NY"	Maternity Roost	2016	High	Wing	F
+NYDEC33025_S45	NYPOST	"(14) Albany County, NY"	Maternity Roost	2016	Low	Wing	F
+NYDEC33026_S44	NYPOST	"(14) Albany County, NY"	Maternity Roost	2016	Low	Wing	M
+PAGC61030_S39	NYPOST	"(12) Ulster County, NY"	Hibernacula	2015	Low	Liver	M
+PAGC61033_S40	NYPOST	"(12) Ulster County, NY"	Hibernacula	2015	Low	Liver	M
+PAGC61034_S43	NYPOST	"(12) Ulster County, NY"	Hibernacula	2015	Low	Liver	M
+PAGC61042_S41	NYPOST	"(12) Ulster County, NY"	Hibernacula	2015	Low	Liver	M
+PAGC61046_S42	NYPOST	"(12) Ulster County, NY"	Hibernacula	2015	Low	Liver	M
+602831_S2	PAPRE	"(1) Mifflin County, PA"	Hibernacula	2007	High	Wing	F
+602839_S2	PAPRE	"(1) Mifflin County, PA"	Hibernacula	2007	Low	Wing	F
+602842_S4	PAPRE	"(2) Snyder County, PA"	Maternity Roost	2006	Low	Wing	F
+602843_S8	PAPRE	"(3) Union County, PA"	Maternity Roost	2006	Low	Wing	F
+602844_S11	PAPRE	"(4) Northumberland County, PA"	Maternity Roost	2006	Low	Wing	F
+602846_S7	PAPRE	"(2) Snyder County, PA"	UNK	2006	Low	Wing	F
+602847_S10	PAPRE	"(4) Northumberland County, PA"	UNK	2006	Low		F
+602862_S6	PAPRE	"(2) Snyder County, PA"	Maternity Roost	2006	Low	Wing	F
+602863_S5	PAPRE	"(2) Snyder County, PA"	Maternity Roost	2006	Low	Wing	F
+602865_S12	PAPRE	"(4) Northumberland County, PA"	Maternity Roost	2006	Low		F
+602870_S9	PAPRE	"(3) Union County, PA"	Maternity Roost	2006	Low	Wing	F
+602876_S13	PAPRE	"(4) Northumberland County, PA"	Maternity Roost	2006	Low	Wing	F
+602878_S3	PAPRE	"(2) Snyder County, PA"	UNK	2006	Low	Wing	F
+602894_S28	PAPRE	"(7) Centre County, PA"	UNK	2007	Low		F
+602899_S1	PAPRE	"(7) Centre County, PA"	UNK	2007	High		F
+AL12_S5	PAPOST	"(6) Lehigh County, PA"	Maternity Roost	2016	High	Wing	F
+AL2_S27	PAPOST	"(6) Lehigh County, PA"	Maternity Roost	2016	Low	Wing	M
+DMR_02716_S26	PAPOST	"(6) Lehigh County, PA"	Maternity Roost	2015	Low	Wing	F
+J11_S34	PAPOST	"(8) Huntingdon County, PA"	Maternity Roost	2016	Low	Wing	F
+J12_S33	PAPOST	"(8) Huntingdon County, PA"	Maternity Roost	2016	Low	Wing	F
+J17_S32	PAPOST	"(8) Huntingdon County, PA"	Maternity Roost	2016	Low	Wing	M
+OL10_S36	PAPOST	"(10) Berks County, PA"	Maternity Roost	2016	Low	Wing	F
+OL2_S1	PAPOST	"(10) Berks County, PA"	Maternity Roost	2016	Low	Wing	M
+OL5_S35	PAPOST	"(10) Berks County, PA"	Maternity Roost	2016	Low	Wing	F
+PAGC60003_S38	PAPOST	"(11) Blair County, PA"	Maternity Roost	2016	Low	Wing	F
+PAGC60009_S37	PAPOST	"(11) Blair County, PA"	Maternity Roost	2016	Low	Wing	M
+PAGC60012_S6	PAPOST	"(11) Blair County, PA"	Maternity Roost	2016	High	Wing	F
+W17_S30	PAPOST	"(7) Centre County, PA"	Hibernacula	2016	Low	Wing	M
+W90_S29	PAPOST	"(7) Centre County, PA"	Hibernacula	2016	Low	Wing	M
+W95_S31	PAPOST	"(7) Centre County, PA"	Hibernacula	2016	Low	Wing	M
