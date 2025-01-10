@@ -229,7 +229,7 @@ htcid=$(sbatch -t 10-00:00:00 \
               --error=${std}/05_hapcall/05_hapcall_%A_%a.err \
               --output=${std}/05_hapcall/05_hapcall_%A_%a.out \
               --dependency=afterok:$stid \
-              bam_to_gvcf.sbatch ${temp} ${ref} ${gatk} ${align} ${vcfs} | sed 's/Submitted batch job //')
+              bam_to_gvcf.slurm ${temp} ${ref} ${gatk} ${align} ${vcfs} | sed 's/Submitted batch job //')
 
 ### Joint genotype indidividuals by scaffold
 jgtid=$(sbatch -t 10-00:00:00 \
@@ -238,7 +238,7 @@ jgtid=$(sbatch -t 10-00:00:00 \
               --error=${std}/06_genotype/06_genotype_%A_%a.err \
               --output=${std}/06_genotype/06_genotype_%A_%a.out \
               --dependency=afterok:$htcid \
-              gvcf_to_vcf_scaff.sbatch ${temp} ${vcfs} ${gatk} ${ref} ${samples_merged} | sed 's/Submitted batch job //')
+              gvcf_to_vcf_scaff.slurm ${temp} ${vcfs} ${gatk} ${ref} ${samples_merged} | sed 's/Submitted batch job //')
 
 ### Concatenate vcfs & filter SNPs
 sbatch -t 05-00:00:00 \
