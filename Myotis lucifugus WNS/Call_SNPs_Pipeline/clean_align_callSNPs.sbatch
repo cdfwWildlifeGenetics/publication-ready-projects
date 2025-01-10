@@ -167,10 +167,10 @@ sbatch -t 05-00:00:00 \
 
 ### Align reads to genome, assign read groups, and mark duplicates
 htid=$(sbatch -t 10-00:00:00 \
-            --mem=85GB \
-            --output=${std}/dragmap_hash_%A.out \
-            --error=${std}/dragmap_hash_%A.err \
-            hashDRAGMAP.slurm ${temp}/conda.txt ${ref} | sed 's/Submitted batch job //')
+              --mem=85GB \
+              --output=${std}/dragmap_hash_%A.out \
+              --error=${std}/dragmap_hash_%A.err \
+              hashDRAGMAP.slurm ${temp}/conda.txt ${ref} | sed 's/Submitted batch job //')
 
 dmid=$(sbatch -t 05-00:00:00 \
               --array=1-${total} \
@@ -224,21 +224,21 @@ stid=$(sbatch -t 02-00:00:00 \
               STRtable.slurm ${ref} ${temp}/conda.txt ${gatk} | sed 's/Submitted batch job //')
 
 htcid=$(sbatch -t 10-00:00:00 \
-              --mem=2GB \
-              --array=1-${ind_scaf}%1000 \
-              --error=${std}/05_hapcall/05_hapcall_%A_%a.err \
-              --output=${std}/05_hapcall/05_hapcall_%A_%a.out \
-              --dependency=afterok:$stid \
-              bam_to_gvcf.slurm ${temp} ${ref} ${gatk} ${align} ${vcfs} | sed 's/Submitted batch job //')
+               --mem=2GB \
+               --array=1-${ind_scaf}%1000 \
+               --error=${std}/05_hapcall/05_hapcall_%A_%a.err \
+               --output=${std}/05_hapcall/05_hapcall_%A_%a.out \
+               --dependency=afterok:$stid \
+               bam_to_gvcf.slurm ${temp} ${ref} ${gatk} ${align} ${vcfs} | sed 's/Submitted batch job //')
 
 ### Joint genotype indidividuals by scaffold
 jgtid=$(sbatch -t 10-00:00:00 \
-              --mem=10GB \
-              --array=1-${nscaffs} \
-              --error=${std}/06_genotype/06_genotype_%A_%a.err \
-              --output=${std}/06_genotype/06_genotype_%A_%a.out \
-              --dependency=afterok:$htcid \
-              gvcf_to_vcf_scaff.slurm ${temp} ${vcfs} ${gatk} ${ref} ${samples_merged} | sed 's/Submitted batch job //')
+               --mem=10GB \
+               --array=1-${nscaffs} \
+               --error=${std}/06_genotype/06_genotype_%A_%a.err \
+               --output=${std}/06_genotype/06_genotype_%A_%a.out \
+               --dependency=afterok:$htcid \
+               gvcf_to_vcf_scaff.slurm ${temp} ${vcfs} ${gatk} ${ref} ${samples_merged} | sed 's/Submitted batch job //')
 
 ### Concatenate vcfs & filter SNPs
 sbatch -t 05-00:00:00 \
