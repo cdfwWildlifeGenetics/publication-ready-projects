@@ -60,8 +60,8 @@ dirconda="/share/cdfwwildlife/Capel_Dedicated/miniconda/etc/profile.d"  # path t
 envconda="dragmap"  # conda environment containing DRAGMAP & picard (& fastq-filter?)
 gatk="/software/gatk/4.3.0.0/static/gatk-4.3.0.0"  # path and name of gatk wrapper
 
-ref="${dir}/REF/Old_Genome/GCF_000147115.1_Myoluc2.0_genomic.fna"  # path to reference genome
-xchrom=""  # name of X chromosome scaffod if known; can find using bam depth of coverage (male dp should be half that of females and/or autosomes)
+ref="${dir}/REF/HiC_Genome/mMyoLuc1.fa"  # path to reference genome
+xchrom="SUPER__4"  # name of X chromosome scaffod if known; can find using bam depth of coverage (male dp should be half that of females and/or autosomes)
 mtDNA=""  # name of mtDNA scaffold if known
 include=""  # OPTIONAL bed file with intervals to detect SNPs within; for whole genome leave blank
 exclude=""  # ${dir}/REF/HiC_Genome/mask/mask.bed OPTIONAL path to masking bed file for SNP calling
