@@ -26,6 +26,7 @@ echo $pop
 
 ## edit vcf header for ANGSD compatability and reduce to a single population "pop"
 INFO='##INFO=<ID=INDEL,Number=0,Type=Flag,Description=\"\">'
+tail -n +2 $dir/Sample_Lists/Population_Map.txt | cut -f 1,2 | grep $pop | cut -f 1 > $dir/Sample_Lists/$pop.ind
 bcftools view -S $dir/Sample_Lists/$pop.ind $dir/04_GATKvcfs/$vcf.vcf.gz | awk -v infohdr=$INFO '/^#CHROM/ {print infohdr"\n"$0} !/^#CHROM/' | bcftools view -Oz -o $angsd/$vcf/$pop.vcf.gz
 
 ## estimate global SFS
