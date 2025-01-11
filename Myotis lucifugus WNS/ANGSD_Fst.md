@@ -30,7 +30,7 @@ tail -n +2 $dir/Sample_Lists/Population_Map.txt | cut -f 1,2 | grep $pop | cut -
 bcftools view -S $dir/Sample_Lists/$pop.ind $dir/04_GATKvcfs/$vcf.vcf.gz | awk -v infohdr=$INFO '/^#CHROM/ {print infohdr"\n"$0} !/^#CHROM/' | bcftools view -Oz -o $angsd/$vcf/$pop.vcf.gz
 
 ## estimate global SFS
-angsd -vcf-pl $angsd/$vcf/$pop.vcf.gz -doSaf 1 -anc $dir/REF/HiC_Genome/Myoluc_HiC.fa -P 1 -out $angsd/$vcf/$pop
+angsd -vcf-pl $angsd/$vcf/$pop.vcf.gz -doSaf 1 -anc $dir/REF/HiC_Genome/mMyoLuc1.fa -P 1 -out $angsd/$vcf/$pop
 realSFS check $angsd/$vcf/$pop.saf.idx
 
 ## calculate thetas
