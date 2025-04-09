@@ -15,7 +15,7 @@
 - **Call_SNPs_Pipeline** - scripts for calling & filtering SNPs
 - ANGSD_Fst.md - calculate smoothed Fst using ANGSD
 - ANGSD_Fst_outliers.R - call Fst outliers & generate Manhattan plots
-- XP-CLR.sh - run XP-CLR
+- XP-CLR.md - run XP-CLR
 - XP-CLR_outliers.R - call XP-CLR outliers & generate Manhattan plots
 - rehh.md - scripts for running REHH & calculating Rsb
 - REHH_Rsb_outliers.R - call Rsb outliers & generate Manhattan plots
