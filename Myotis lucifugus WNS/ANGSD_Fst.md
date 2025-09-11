@@ -74,9 +74,9 @@ echo $pop
 
 realSFS $angsd/$vcf/$pop1.saf.idx $angsd/$vcf/$pop2.saf.idx -fold 0 -P 16 > $angsd/$vcf/Fst/$pop1.$pop2.ml   # calculate 2d sfs for each pair
 realSFS fst index $angsd/$vcf/$pop1.saf.idx $angsd/$vcf/$pop2.saf.idx -sfs $angsd/$vcf/Fst/$pop1.$pop2.ml -fstout $angsd/$vcf/Fst/$pop1.$pop2 -P 1  # prepare Fst for easy window analysis
-# realSFS fst print $angsd/$vcf/Fst/$pop1.$pop2.fst.idx | wc -l
-# realSFS fst stats $angsd/$vcf/Fst/$pop1.$pop2.fst.idx  # get the global estimate
-realSFS fst stats2 $angsd/$vcf/Fst/$pop1.$pop2.fst.idx -win 10000 -step 9000 -P16 > $angsd/$vcf/Fst/10Kb/$pop1.$pop2.win.fst
+realSFS fst print $angsd/$vcf/Fst/$pop1.$pop2.fst.idx | wc -l
+realSFS fst stats $angsd/$vcf/Fst/$pop1.$pop2.fst.idx  # get the global estimate
+realSFS fst stats2 $angsd/$vcf/Fst/$pop1.$pop2.fst.idx -win 10000 -step 9000 -P16 > $angsd/$vcf/Fst/10Kb/$pop1.$pop2.win.fst  # calculate Fst in 10 Kbp windows
 cat $angsd/$vcf/Fst/10Kb/$pop1.$pop2.win.fst | sed -E 's/Nsites/Nsites\tFst/' >temp && mv temp $angsd/$vcf/Fst/10Kb/$pop1.$pop2.win.fst
 
 (exit) && echo success
