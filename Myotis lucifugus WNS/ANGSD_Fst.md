@@ -72,7 +72,7 @@ echo $HOSTNAME
 echo $vcf
 echo $pop
 
-realSFS $angsd/$vcf/$pop1.saf.idx $angsd/$vcf/$pop2.saf.idx -fold 1 -P 16 > $angsd/$vcf/Fst/$pop1.$pop2.ml   # calculate 2d sfs for each pair
+realSFS $angsd/$vcf/$pop1.saf.idx $angsd/$vcf/$pop2.saf.idx -fold 0 -P 16 > $angsd/$vcf/Fst/$pop1.$pop2.ml   # calculate 2d sfs for each pair
 realSFS fst index $angsd/$vcf/$pop1.saf.idx $angsd/$vcf/$pop2.saf.idx -sfs $angsd/$vcf/Fst/$pop1.$pop2.ml -fstout $angsd/$vcf/Fst/$pop1.$pop2 -P 1  # prepare Fst for easy window analysis
 # realSFS fst print $angsd/$vcf/Fst/$pop1.$pop2.fst.idx | wc -l
 # realSFS fst stats $angsd/$vcf/Fst/$pop1.$pop2.fst.idx  # get the global estimate
