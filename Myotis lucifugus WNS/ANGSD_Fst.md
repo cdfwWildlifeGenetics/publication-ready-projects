@@ -78,8 +78,6 @@ realSFS fst index $angsd/$vcf/$pop1.saf.idx $angsd/$vcf/$pop2.saf.idx -sfs $angs
 # realSFS fst stats $angsd/$vcf/Fst/$pop1.$pop2.fst.idx  # get the global estimate
 realSFS fst stats2 $angsd/$vcf/Fst/$pop1.$pop2.fst.idx -win 10000 -step 9000 -P16 > $angsd/$vcf/Fst/10Kb/$pop1.$pop2.win.fst
 cat $angsd/$vcf/Fst/10Kb/$pop1.$pop2.win.fst | sed -E 's/Nsites/Nsites\tFst/' >temp && mv temp $angsd/$vcf/Fst/10Kb/$pop1.$pop2.win.fst
-realSFS fst stats2 $angsd/$vcf/Fst/$pop1.$pop2.fst.idx -win 5000 -step 4500 -P 16 > $angsd/$vcf/Fst/5Kb/$pop1.$pop2.win.fst
-cat $angsd/$vcf/Fst/5Kb/$pop1.$pop2.win.fst | sed -E 's/Nsites/Nsites\tFst/' > temp && mv temp $angsd/$vcf/Fst/5Kb/$pop1.$pop2.win.fs
 
 (exit) && echo success
 ```
