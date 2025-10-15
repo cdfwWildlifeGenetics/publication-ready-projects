@@ -1,1 +1,1 @@
-# Publication-ready Projects
+# Publications
