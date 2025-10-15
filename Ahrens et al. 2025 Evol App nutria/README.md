@@ -5,5 +5,6 @@ Authors: Kristen D. Ahrens, Joshua M. Hallas, Antionette J. Piaggio, Kelly L. Ca
 Corresponding author: kristen.ahrens@wildlife.ca.gov
 
 Filtered VCF files and mitochondrial sequencing data can be found on the DRYAD repository for this publication at:  
+Novel mitochondrial sequences were uploaded to NCBI GenBank under acccesion numbers PX240733-35.  
 Individual FASTQ files can be found on NCBI's Sequence Read Archive: BioProject PRJNA1328208 (accession numbers SAMN51307640-SAMN51307946).  
 Sample metadata can be found in the supplmental materials (Table S1) of the publication.
